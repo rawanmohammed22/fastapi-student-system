@@ -17,22 +17,22 @@ A robust API for managing student records, built with Python and FastAPI. This p
   * * **Architecture:** Repository Pattern, `dependency-injector`
   * * **Infrastructure:** Docker, Alembic
                    
-    * ## Current Status & Known Limitations
+  * ## Current Status & Known Limitations
       * *(Honest Assessment)*
       * * **No Tests:** The project currently lacks automated tests (e.g., `pytest`).
       * * **Environment Variables:** Missing `.env.example` file to easily configure local setups.
       * * **Error Handling:** Can be expanded for edge cases in the AI integration.
                          
-        * ## How to Run Locally
+  * ## How to Run Locally
                          
-        * 1. Clone the repository
-          2. 2. Ensure Docker and Docker Compose are installed.
-          3. 3. Configure your .env file with your database credentials and Cohere API key.
-          4. 4. Run the containers:
-           5.    ```bash
-                  docker-compose up --build
-                ```
-          5. Apply migrations:
-             6.    ```bash
-                  alembic upgrade head
-             ```
+  * 1. Clone the repository
+   2. 2. Ensure Docker and Docker Compose are installed.
+   3. 3. Configure your .env file with your database credentials and Cohere API key.
+   4. 4. Run the containers:
+   5.    ```bash
+          docker-compose up --build
+          ```
+   5. Apply migrations:
+   6.    ```bash
+          alembic upgrade head
+        ```
